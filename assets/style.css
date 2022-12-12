@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*  */
+.navbar {
+  background-color: whitesmoke;
+}
+.navbar-brand {
+  font-family: lombok;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-weight: 550;
+}
+@media screen and (min-width: 994px) {
+  .navbar-brand {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 994px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+.tag-name {
+  text-shadow: 10px 10px solid red;
+  /* background-color: white;
+  padding: 2px auto;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgb(117, 113, 113); */
+}
+/* HEROOOO */
+.hero {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 60vh;
+  padding: 160px 0 60px 0;
+  background-color: whitesmoke;
+}
+
+.hero h2 {
+  font-size: 50px;
+  font-weight: 650;
+  margin-bottom: 20px;
+  color: #37373f;
+}
+
+.hero p {
+  color: #4f4f5a;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+.img-fluid {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: -100px;
+}
+
+/* ABOUT  */
+.section-header h2 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #7f7f90;
+  text-transform: uppercase;
+  font-family: var(--font-default);
+}
+.section-header p {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 400;
+}
+.img-about {
+  border-radius: ;
+  /* background-color: whitesmoke; */
+}
+
+#hero {
+  padding-bottom: 6rem;
+}
+/* SKILLS */
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #bfbdbd;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #303132;
+}
+
+/* SKILLS END*/ /* ABOUT  END*/
+
+/* SERVICE */
+.service {
+  background-color: rgb(245, 245, 245);
+  background-position: cover;
+}
+.section-header span {
+  position: absolute;
+}
+#card-service:hover {
+  border: 2px solid #222222;
+  border-radius: 10px;
+  -webkit-transition: 0.4s all ease;
+}
+
+@media (max-width: 990px) {
+  .card-servicepad {
+    padding-bottom: 30px;
+  }
+}
+
+/* SERVICE END */
+
+/* IMAGE HOVER OVERLAY */
+.image {
+  margin: auto;
+  position: relative;
+}
+
+.image_img {
+  display: block;
+  width: 100%;
+  border: 1px solid #535353;
+}
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.25s;
+  opacity: 0;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.img_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.img_description {
+  font-size: 1.25em;
+}
+
+.button_title {
+  width: 35%;
+  margin-left: 33%;
+}
+
+@media (max-width: 640px) {
+  .class_baru {
+    padding-bottom: 10px;
+  }
+}
+.class_baru {
+  justify-content: center;
+}
+/* CONTACT MULAI */
+
+#contact {
+  background-color: #f5f5f5;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #8f8a8a;
+  margin: 6px auto;
+  resize: vertical;
+  border-radius: 8px;
+}
+
+.contact-me {
+  justify-content: center;
+}
+
+.button-send {
+  width: 30%;
+  position: flex;
+  margin: auto;
+}
+
+.btn-kirim {
+  border: 2px solid #37373f;
+  border-radius: 8px;
+  transition: color 0.4s linear;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 5px;
+}
+
+.btn-loading {
+  width: 100%;
+  height: 42px;
+}
+
+input:invalid,
+input:required:invalid {
+  outline: 0.5px solid red;
+  border: inherit;
+  animation: shake 0.3s;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+input:valid,
+input:required {
+  outline: inherit;
+  border: 1px solid black;
+}
+.optional {
+  color: grey;
+  font-size: 12px;
+  align-items: flex-start;
+}
+/* PORTFOLIO DETAILS */
+
+.container-details {
+  background-color: transparent;
+  /* padding top: 100px auto; */
+}
+
+/* MODAL */
+.modal {
+  background: transparent;
+}
+
+.modal-background {
+  background: transparent;
+}
+.modal-title {
+  font-family: "montserrat", sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+}
+.portfolio-title {
+  color: #7f7f90;
+}
+.portfolio-info {
+  background-color: #fff;
+  border-left: 2px solid #333;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.inf-project {
+  text-align: justify;
+}
+@media screen and (max-width: 991px) {
+  .portfolio-info {
+    padding-top: 10px;
+    border-left: none;
+    border-top: 2px solid #333;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+.portfolio-info ul li {
+  text-align: justify;
+}
+/* MODAL END  */
+
+/* FOOOTER */
+.btn-kirim:hover {
+  color: whitesmoke;
+  background-color: #37373f;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.footer {
+  align-items: center;
+}
+
+/* UNTUK TEST */
+
+.input-group {
+  width: 280px;
+  position: relative;
+  margin: 20px;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: white;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-group input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: grey;
+  padding: 0 10px;
+  background: transparent;
+  border: 1.5px solid black;
+  outline: none;
+  border-radius: 10px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: 0.1;
+}
+
+.wrap {
+  padding-top: 50px;
+  background-color: grey;
+}
+.container-test {
+  background-color: #0d6efd;
+  margin: 40px auto;
+}
+
+.modal-content {
+  background-color: whitesmoke;
+  backdrop-filter: blur(50px);
+  border-radius: 15px;
+}
